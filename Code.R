@@ -11,3 +11,7 @@ Austin_Crash <- read.csv("~/Downloads/AustinTrafficCrash.csv")
 View(Austin_Crash)
 colnames(Austin_Crash)
 head(Austin_Crash)
+tail(Austin_Crash)
+
+print(head(Austin_Crash,2))
+#
