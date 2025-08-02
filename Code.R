@@ -42,5 +42,23 @@ Austin_crash_clean <- Austin_Crash |>
       filter(!is.na(latitude), !is.na(longitude))
 
 
+boxplot(death_cnt ~ Crash.ID, data = Austin_Crash, col = "red")
 
+with(Austin_Crash, plot(latitude, bicycle_death_count, col = point ))
+
+?hist
+
+hist(Austin_Crash$Estimated.Total.Comprehensive.Cost,
+     main = "Distribution of Estimated Total comprehensive Cost", 
+     xlab = "Estimated Total Comperhensive Cost (USD)",
+     ylab = "Freuency", 
+     col = "blue",
+     border = "white")
+
+plot(Austin_Crash$crash_speed_limit, Austin_Crash$Estimated.Total.Comprehensive.Cost,
+     main = "Crash Speed Limit vs. Estimated Total Comprehensive Cost",
+     xlab = "Crash Speed Limit (mph)",
+     ylab = "Estimated Total Comprehensive Cost (USD)",
+     pch = 19,
+     col = "red")
 
