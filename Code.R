@@ -60,5 +60,7 @@ plot(Austin_Crash$crash_speed_limit, Austin_Crash$Estimated.Total.Comprehensive.
      xlab = "Crash Speed Limit (mph)",
      ylab = "Estimated Total Comprehensive Cost (USD)",
      pch = 19,
-     col = "red")
+     col = "red",
+     )
+example(points)
 
